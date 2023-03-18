@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block title %} Log In {% endblock %} {% block main %}
+<section class="py-5" style="padding-top: 27px; margin-top: -30px">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8 col-xl-6 text-center mx-auto">
+        <p class="fw-bold text-success mb-2">Absence Form</p>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6 col-xl-4">
+        <div>
+          <form class="p-3 p-xl-4" method="post" style="margin-top: -50px">
+            <div class="mb-3"><input class="form-control" type="text" id="name-1" name="username" placeholder="User Name" /></div>
+            <input class="form-control" type="password" id="email-1" name="password" placeholder="Password" style="margin-bottom: 18px" /><select
+              class="form-select"
+              style="margin-bottom: 16px"
+            >
+              <optgroup label="Time Slot" name="meal">
+                <option value="veg" selected="">Morning</option>
+                <option value="non_veg">Evening</option>
+              </optgroup>
+            </select>
+            <div class="mb-3"></div>
+            <div class="mb-3"></div>
+            <div><button class="btn btn-primary shadow d-block w-100" type="submit">Send</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
